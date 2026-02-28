@@ -1,4 +1,4 @@
-# 🚀 KChat - Advanced Real-Time Messaging API
+# 🚀 Chatapp server - Advanced Real-Time Messaging API
 ### Developed by **Mohammed Walid**
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -6,9 +6,11 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 A sophisticated and secure Backend engine for real-time messaging applications, leveraging advanced encryption technologies and high-performance real-time communication.
+
+
 
 ## ✨ Key Features
 
@@ -29,24 +31,25 @@ A sophisticated and secure Backend engine for real-time messaging applications, 
 
 - **🚀 Performance & Scalability:**
     - **Redis Caching:** Session management and user status for fast response times.
-    - **Image Processing:** Image compression and processing via the **Sharp** library to reduce storage footprint.
-    - **Rate Limiting:** Protection against DDoS and Brute-force attacks.
+    - **Image Processing:** Image compression and processing via the **Sharp** library.
+    - **Containerization:** Full support for **Docker** and **Docker Compose** for easy deployment.
 
 ## 🛠️ Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
-- **Database:** MongoDB (Mongoose ODM)
+- **Database:** MongoDB
 - **Real-time Engine:** Socket.io
 - **In-Memory Cache:** Redis
 - **Security:** Helmet, Bcrypt, Speakeasy, JWT
-- **Media:** Multer & Sharp
+- **Containerization:** Docker, Docker Compose
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (v16+)
 - MongoDB & Redis Server
+- Docker & Docker Compose (Optional, for containerized run)
 
 ### Installation
 
@@ -62,9 +65,25 @@ A sophisticated and secure Backend engine for real-time messaging applications, 
     ```
 
 3. **Environment Variables:**
-    Create a `.env` file and add the required credentials (PORT, MONGO_URI, JWT_SECRETS, GMAIL_USER, etc.).
+    Create a `.env` file based on `.env.example` and add the required credentials (PORT, MONGO_URI, JWT_SECRETS, GMAIL_USER, etc.).
 
-4. **Run the Server:**
+### 🐳 Running with Docker
+
+You can run the entire infrastructure (App, Database, Redis) using Docker Compose:
+
+1. **Build and start containers:**
+    ```bash
+    docker-compose up --build
+    ```
+
+2. **Stop containers:**
+    ```bash
+    docker-compose down
+    ```
+
+### 🏃‍♂️ Running Locally
+
+1. **Run the Server:**
     ```bash
     # Development Mode
     npm run dev
