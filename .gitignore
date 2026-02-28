@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDES
+.vscode/
+.idea/
+
+# Uploads
+uploads/
+temp/
+
+# Coverage (if you use Jest)
+coverage/
