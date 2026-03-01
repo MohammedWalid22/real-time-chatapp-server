@@ -341,7 +341,6 @@ process.on('SIGTERM', async () => {
   });
 });
 
-// ========== START SERVER (مرة واحدة بس!) ==========
 const PORT = process.env.PORT || 5000;
 
 const { testConnection } = require('./services/email.service');
