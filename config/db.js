@@ -8,9 +8,6 @@ const connectDB = async () => {
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
       family: 4, // Use IPv4
-      // ❌ شيل السطور دي:
-      // useNewUrlParser: true,
-      // useUnifiedTopology: true,
     });
 
     logger.info(`✅ MongoDB Connected: ${conn.connection.host}`);
