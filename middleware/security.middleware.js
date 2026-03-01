@@ -61,8 +61,6 @@ exports.mongoSanitizeConfig = mongoSanitize({
   }
 });
 
-// ✅ شيلت xss-clean لأنها deprecated
-// بدالها هنستخدم express-validator في الـ routes
 
 // Prevent parameter pollution
 exports.hppConfig = hpp({
